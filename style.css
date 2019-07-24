@@ -1,0 +1,82 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #99ccff;
+    font-size: 1.6rem;
+    font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana,
+        sans-serif;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+#titleHeader {
+    text-align: center;
+}
+
+#navBar {
+    background-color: #ffcc00;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+#descBar {
+    background-color: #ffcc00;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.navLink {
+    color: black;
+    font-size: 2rem;
+    margin: 5%;
+}
+
+.navLink:hover {
+    text-decoration: none;
+}
+
+#gallery {
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    margin-top: 2rem;
+    background-color: #ffcc00;
+}
+
+.galleryImage {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    transition: 0.25s;
+    opacity: 0.75;
+    padding: 2rem;
+}
+
+.galleryImage:hover {
+    opacity: 1;
+}
+
+/*TABLE VIEW*/
+@media all and (min-width:35rem) {}
+
+;
+
+/*DESKTOP VIEW*/
+@media all and (min-width:65rem) {}
+
+;

@@ -1,0 +1,79 @@
+<script>
+        class GalleryImage {
+            constructor(src, desc) {
+                this.src = src;
+                this.desc = desc;
+            }
+        }
+
+        var Imgs = [
+            new GalleryImage(
+                "bear.jpg",
+                "A cute stuffed teddy bear"
+            ),
+            new GalleryImage(
+                "birdpig.jpg",
+                "A cute bird"
+            ),
+            new GalleryImage(
+                "cat.jpeg",
+                "A stupid cat"
+            ),
+            new GalleryImage(
+                "chicken1.jpg",
+                "A big chicken"
+            ),
+            new GalleryImage(
+                "chicken2.jpg",
+                "A small chicken"
+            ),
+            new GalleryImage(
+                "dog.jpg",
+                "A big dog"
+            ),
+            new GalleryImage(
+                "fox.jpg",
+                "A middle fox"
+            ),
+            new GalleryImage(
+                "hellokitty.jpg",
+                "A cute hellokitty"
+            ),
+            new GalleryImage(
+                "hellowkitty1.jpg",
+                "A big hellowkitty"
+            ),
+            new GalleryImage(
+                "panada.jpg",
+                "A small panada"
+            ),
+            new GalleryImage(
+                "rabbit1.jpg",
+                "A small rabbit"
+            ),
+            new GalleryImage(
+                "sheep.jpg",
+                "A ugly sheep"
+            ),
+        ];
+
+        var GalleryID = 'gallery'
+        var descID = 'descBar';
+        var ImgLocation = 'images/'
+        var $descBar = document.getElementById(descID);
+
+        var ImgClass = 'galleryImage'
+
+        var $gallery = document.getElementById(GalleryID);
+
+        //Add images
+        for (var i = 0; i < Imgs.length; i++) {
+
+            $gallery.innerHTML += "<input type='image' onfocus='ImageClick(" + i + ")' onclick='ImageClick(" + i + ")' src='" + ImgLocation + Imgs[i].src + "' alt= '" + Imgs[i].src + "' class = '" + ImgClass + "'>"
+        }
+
+        function ImageClick(i) {
+            $descBar.innerHTML = Imgs[i].desc;
+        }
+
+    </script>
